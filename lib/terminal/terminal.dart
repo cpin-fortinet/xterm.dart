@@ -219,11 +219,11 @@ class Terminal with Observable {
   }
 
   void setSlowMotion(bool enabled) {
-    _slowMotion = enabled ?? _slowMotion;
+    _slowMotion = enabled;
   }
 
   void setOriginMode(bool enabled) {
-    _originMode = enabled ?? _originMode;
+    _originMode = enabled;
     buffer.setPosition(0, 0);
   }
 
@@ -232,15 +232,15 @@ class Terminal with Observable {
   }
 
   void setApplicationCursorKeys(bool enabled) {
-    _applicationCursorKeys = enabled ?? _applicationCursorKeys;
+    _applicationCursorKeys = enabled;
   }
 
   void setShowCursor(bool showCursor) {
-    _showCursor = showCursor ?? _showCursor;
+    _showCursor = showCursor;
   }
 
   void setBlinkingCursor(bool enabled) {
-    _blinkingCursor = enabled ?? _blinkingCursor;
+    _blinkingCursor = enabled;
   }
 
   void setAutoWrapMode(bool enabled) {
@@ -268,7 +268,7 @@ class Terminal with Observable {
   }
 
   void setMouseMode(MouseMode mode) {
-    _mouseMode = mode ?? _mouseMode;
+    _mouseMode = mode;
   }
 
   void useMainBuffer() {
